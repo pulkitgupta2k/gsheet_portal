@@ -1,4 +1,4 @@
 from helper import driver
 
 if __name__ == "__main__":
-    driver('0.0.0.0', 5000)
+    driver(host='0.0.0.0', port=5000, debug = False)

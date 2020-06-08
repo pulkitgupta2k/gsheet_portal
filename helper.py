@@ -89,6 +89,6 @@ def downloadFile():
         path = "zips/{}.zip".format(filename)
         return send_file(path, as_attachment=True)
 
-def driver(host, port):
+def driver(host, port,debug):
     app.secret_key = os.urandom(12)
-    app.run(debug = 'true', host = host, port = port)
+    app.run(debug = debug, host = host, port = port)
