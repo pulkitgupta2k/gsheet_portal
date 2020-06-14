@@ -91,5 +91,4 @@ def downloadFile():
 
 def driver(host, port,debug):
     app.secret_key = os.urandom(12)
-    print(app.secret_key = os.urandom(12))
     app.run(debug = debug, host = host, port = port)
